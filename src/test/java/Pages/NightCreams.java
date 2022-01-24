@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.ArrayList;
 
@@ -11,6 +12,8 @@ public class NightCreams extends BasePage{
     public NightCreams(ChromeDriver driver) {
         super(driver);
     }
+    @FindBy (xpath = "//div[@class='css-1xpribl eanm77i0']")
+    public WebElement topratedSelectedScroll;
 
     public ArrayList<WebElement> getListOfProducts() {
         ArrayList<WebElement> listOfProducts = new ArrayList<>(driver.findElements(By.xpath("//div[@class='css-zwibo9 eanm77i0']")));
