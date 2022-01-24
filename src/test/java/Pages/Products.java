@@ -47,18 +47,18 @@ public class Products extends BasePage{
 //        return new Basket(driver);
 //    }
 
-//    public ArrayList<WebElement> getListOfProducts() {
-//        ArrayList<WebElement> listOfProducts = new ArrayList<>(driver.findElements(By.xpath("//div[@class='css-1322gsb']")));
-//        return listOfProducts;
-//    }
-//    public ArrayList<String> getTitlesOfAllProducts() {
-//        ArrayList<WebElement> listOfProducts = new ArrayList<>(driver.findElements(By.xpath("//div[@class='css-1322gsb']")));
-//        ArrayList<String> titles = new ArrayList<>();
-//        for (int i = 0; i < listOfProducts.size(); i++) {
-//            String title = listOfProducts.get(i).getText();
-//            titles.add(title);
-//        }
-//        return titles;
-//    }
+    public ArrayList<WebElement> getListOfProducts() {
+        ArrayList<WebElement> listOfProducts = new ArrayList<>(driver.findElements(By.xpath("//div[@class='css-1322gsb']")));
+        return listOfProducts;
+    }
+    public ArrayList<String> getTitlesOfAllProducts() {
+        ArrayList<WebElement> listOfProducts = new ArrayList<>(driver.findElements(By.xpath("//div[@class='css-1322gsb']")));
+        ArrayList<String> titles = new ArrayList<>();
+        for (int i = 0; i < listOfProducts.size(); i++) {
+            String title = listOfProducts.get(i).getText();
+            titles.add(title);
+        }
+        return titles;
+    }
 
 }
