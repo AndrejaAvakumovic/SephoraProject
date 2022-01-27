@@ -12,5 +12,14 @@ public class FaceMasks extends BasePage {
         super(driver);
     }
 
+    public ArrayList<String> getListOfFaceMasks() {
+        ArrayList<WebElement> listOfFaceMasks = new ArrayList<>(driver.findElements(By.xpath("//div[@class='css-1322gsb']")));
+        ArrayList<String> titles = new ArrayList<>();
+        for (int i = 0; i < listOfFaceMasks.size(); i++) {
+            String title = listOfFaceMasks.get(i).getText();
+            titles.add(title);
+        }
+        return titles;
+    }
 
 }
