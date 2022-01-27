@@ -8,7 +8,7 @@ public class Skincare extends BasePage{
     public Skincare(ChromeDriver driver) {super(driver);
     }
 
-    @FindBy(xpath = "//a[contains(text(),'Masks (209)')]")
+    @FindBy(xpath = "//a[contains(text(),'Masks (212)')]")
     public WebElement maskMenuItem;
 
     public Masks clickOnMasksMenuItem(){
