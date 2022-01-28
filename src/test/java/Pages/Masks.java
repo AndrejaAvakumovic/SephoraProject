@@ -10,7 +10,7 @@ public class Masks extends BasePage{
         super(driver);
     }
 
-    @FindBy(xpath = "//a[contains(text(),'Face Masks (180)')]")
+    @FindBy(xpath = "//a[contains(text(),'Face Masks (')]")
     public WebElement faceMasks;
 
     public FaceMasks clickOnFaceMasks (){
